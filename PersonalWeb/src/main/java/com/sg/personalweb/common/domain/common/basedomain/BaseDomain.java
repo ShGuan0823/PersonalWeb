@@ -1,9 +1,9 @@
-package com.sg.personalweb.common.domain;
+package com.sg.personalweb.common.domain.common.basedomain;
 
 import com.sg.personalweb.common.constants.SystemConstants;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
@@ -12,9 +12,8 @@ import java.util.Date;
  * @Author ShGuan
  * @Date 2019/6/12 21:40
  **/
-
-@MappedSuperclass
 @Data
+@MappedSuperclass
 public class BaseDomain {
 
     private static final long serialVersionUID = SystemConstants.SERIAL_VERSION_UID;
@@ -39,12 +38,12 @@ public class BaseDomain {
     /**
      * 实体最新更新日期
      */
-    private Date updateDate;
+    private Date modifyDate;
 
     /**
      * 更新者
      */
-    private String updateBy;
+    private String modifyBy;
 
     /**
      * 实体备注
@@ -54,21 +53,21 @@ public class BaseDomain {
     /**
      * 删除标记（0：正常；1：删除；2：审核）
      */
-    private String flagOfRemove;
+    private String state;
 
     /**
      * 添加之前执行方法，需要手动调用
      */
     public void preSave(){
-        this.updateDate = new Date();
-        this.createDate = this.updateDate;
+        this.createDate = new Date();
+        this.modifyDate = this.createDate;
     }
 
     /**
      * 更新之前执行方法，需要手动调用
      */
     public void preUpdate() {
-        this.updateDate = new Date();
+        this.modifyDate = new Date();
     }
 
 

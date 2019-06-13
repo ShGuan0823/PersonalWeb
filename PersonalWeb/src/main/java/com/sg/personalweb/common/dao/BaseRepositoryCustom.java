@@ -1,6 +1,6 @@
 package com.sg.personalweb.common.dao;
 
-import com.sg.personalweb.common.domain.BaseDomain;
+import com.sg.personalweb.common.domain.common.basedomain.BaseDomain;
 
 /**
  * @Description dao基础自定义接口
