@@ -1,7 +1,7 @@
 package com.sg.personalweb.common.service.impl;
 
 import com.sg.personalweb.common.dao.BaseRepository;
-import com.sg.personalweb.common.domain.BaseDomain;
+import com.sg.personalweb.common.domain.common.basedomain.BaseDomain;
 import com.sg.personalweb.common.service.BaseService;
 import com.sg.personalweb.common.util.Tools;
 

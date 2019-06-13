@@ -1,6 +1,6 @@
 package com.sg.personalweb.common.service;
 
-import com.sg.personalweb.common.domain.BaseDomain;
+import com.sg.personalweb.common.domain.common.basedomain.BaseDomain;
 
 import java.util.List;
 
