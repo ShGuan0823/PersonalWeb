@@ -43,4 +43,6 @@ public class Tools {
     public static boolean isNotEmpty(Object obj) {
         return !isEmpty(obj);
     }
+
+
 }
