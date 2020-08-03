@@ -14,7 +14,7 @@ public enum  ResultCode {
 
     FAIL(5000);
 
-    public int code;
+    private int code;
 
     ResultCode(int code) {
         this.code = code;
